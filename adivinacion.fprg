@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="numeros adivinacion"/>
+        <attribute name="authors" value="SISTEMAS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-05-23 03:03:48 a.&#160;m."/>
+        <attribute name="created" value="U0lTVEVNQVM7REVTS1RPUC01M1NQQUk0OzIwMjYtMDUtMjM7MDE6NTM6MzQgYS7CoG0uOzMyMzg="/>
+        <attribute name="edited" value="U0lTVEVNQVM7REVTS1RPUC01M1NQQUk0OzIwMjYtMDUtMjM7MDM6MDM6NDggYS7CoG0uOzI7MzM0OQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i, NumeroRandom, NumeroEscrito" type="Integer" array="False" size=""/>
+            <declare name="Bandera" type="Boolean" array="False" size=""/>
+            <assign variable="NumeroRandom" expression="Random(100)"/>
+            <assign variable="Bandera" expression="true"/>
+            <assign variable="i" expression="1"/>
+            <while expression="Bandera=true">
+                <output expression="&quot;digite un numero&quot;" newline="True"/>
+                <input variable="NumeroEscrito"/>
+                <if expression="NumeroEscrito=NumeroRandom">
+                    <then>
+                        <output expression="&quot;has adivinado el numero&quot;&amp;i&amp;&quot;intentos&quot;" newline="True"/>
+                        <assign variable="Bandera" expression="false"/>
+                    </then>
+                    <else>
+                        <if expression="NumeroEscrito&gt;NumeroRandom">
+                            <then>
+                                <output expression="&quot;el numero es menor&quot;" newline="True"/>
+                            </then>
+                            <else>
+                                <output expression="&quot;el numero es mayor&quot;" newline="True"/>
+                            </else>
+                        </if>
+                        <assign variable="i" expression="i+1"/>
+                    </else>
+                </if>
+            </while>
+        </body>
+    </function>
+</flowgorithm>
