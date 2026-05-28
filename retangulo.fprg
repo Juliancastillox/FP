@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="flowgoritm"/>
+        <attribute name="authors" value="SISTEMAS"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-05-09 03:44:47 a.&#160;m."/>
+        <attribute name="created" value="U0lTVEVNQVM7REVTS1RPUC01M1NQQUk0OzIwMjYtMDUtMDk7MDI6MDU6NTQgYS7CoG0uOzMyNDI="/>
+        <attribute name="edited" value="U0lTVEVNQVM7REVTS1RPUC01M1NQQUk0OzIwMjYtMDUtMDk7MDM6NDQ6NDcgYS7CoG0uOzE7MzM1Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="largo, ancho, Tama&#241;o" type="Real" array="False" size=""/>
+            <assign variable="Tama&#241;o" expression="random(100)"/>
+            <assign variable="largo" expression="Tama&#241;o*5"/>
+            <assign variable="ancho" expression="Tama&#241;o*5"/>
+            <call expression="HacerRectangulo(ancho,largo)"/>
+            <forward expression="largo" pen="down"/>
+            <call expression="CrearTriangulo(ancho)"/>
+        </body>
+    </function>
+    <function name="CrearTriangulo" type="None" variable="">
+        <parameters>
+            <parameter name="ancho" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <turn expression="45" rotate="right"/>
+            <forward expression="ancho*(SQRT(2))/2" pen="down"/>
+            <turn expression="90" rotate="right"/>
+            <forward expression="ancho*(SQRT(2))/2" pen="down"/>
+            <turn expression="135" rotate="right"/>
+            <forward expression="ancho" pen="down"/>
+        </body>
+    </function>
+    <function name="HacerRectangulo" type="None" variable="">
+        <parameters>
+            <parameter name="W" type="Real" array="False"/>
+            <parameter name="H" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="2" direction="inc" step="1">
+                <forward expression="100" pen="down"/>
+                <turn expression="90" rotate="right"/>
+                <forward expression="100" pen="down"/>
+                <turn expression="90" rotate="right"/>
+                <output expression="i" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
