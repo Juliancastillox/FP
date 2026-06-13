@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="metros a pulgadas"/>
+        <attribute name="authors" value="EQUIPO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-01 03:42:21 p.&#160;m."/>
+        <attribute name="created" value="RVFVSVBPO0RFU0tUT1AtVjBJM0hIUDsyMDI2LTA0LTE3OzA2OjU2OjM2IHAuwqBtLjszMTQw"/>
+        <attribute name="edited" value="RVFVSVBPO0RFU0tUT1AtVjBJM0hIUDsyMDI2LTA2LTAxOzAzOjQyOjIxIHAuwqBtLjsyOzMyMzA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="TotalMetros, TotalPulgadas, Convercion" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite la candita de metros que necesita&quot;" newline="True"/>
+            <input variable="TotalMetros"/>
+            <assign variable="Convercion" expression="(TotalMetros*100)/2.54"/>
+            <output expression="&quot;serian esto de  pulgadas &quot; &amp; Convercion" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

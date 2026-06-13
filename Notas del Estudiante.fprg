@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Notas del Estudiante"/>
+        <attribute name="authors" value="EQUIPO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-17 08:13:00 p.&#160;m."/>
+        <attribute name="created" value="RVFVSVBPO0RFU0tUT1AtVjBJM0hIUDsyMDI2LTA0LTE3OzA3OjU5OjI3IHAuwqBtLjszMTQ0"/>
+        <attribute name="edited" value="RVFVSVBPO0RFU0tUT1AtVjBJM0hIUDsyMDI2LTA0LTE3OzA4OjEzOjAwIHAuwqBtLjsxOzMyMzQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="PromedioTotal, Nota1, Nota2, Nota3" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite la Nota de Antier&quot;" newline="True"/>
+            <input variable="Nota1"/>
+            <output expression="&quot;Digite la Nota de Ayer&quot;" newline="True"/>
+            <input variable="Nota2"/>
+            <output expression="&quot;Digite la Nota de Hoy&quot;" newline="True"/>
+            <input variable="Nota3"/>
+            <assign variable="PromedioTotal" expression="(Nota1+Nota2+Nota3)/3"/>
+            <output expression="&quot;El Promedio del Estudiante es = &quot; &amp; PromedioTotal" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

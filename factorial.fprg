@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="factorial"/>
+        <attribute name="authors" value="Compumax"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-06-12 07:03:06 p.&#8239;m."/>
+        <attribute name="created" value="Q29tcHVtYXg7REVTS1RPUC1TOEpORE5HOzIwMjYtMDYtMTI7MDY6Mzc6MjQgcC7igK9tLjsxMTYxMw=="/>
+        <attribute name="edited" value="Q29tcHVtYXg7REVTS1RPUC1TOEpORE5HOzIwMjYtMDYtMTI7MDc6MDM6MDYgcC7igK9tLjsxOzExNzE1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="numero" type="Integer" array="False" size=""/>
+            <output expression="&quot;ingrese u numero&quot;" newline="True"/>
+            <input variable="numero"/>
+            <call expression="factorialnumero(numero)"/>
+            <output expression="factorialnumero(numero)" newline="True"/>
+        </body>
+    </function>
+    <function name="factorialnumero" type="Integer" variable="factorial">
+        <parameters>
+            <parameter name="n" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="factorial" type="Integer" array="False" size=""/>
+            <if expression="n == 1">
+                <then>
+                    <assign variable="factorial" expression="1"/>
+                </then>
+                <else>
+                    <assign variable="factorial" expression="n*factorialnumero(n-1)"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

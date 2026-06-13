@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="NUMERO MAYOR"/>
+        <attribute name="authors" value="EQUIPO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-24 08:56:18 p.&#160;m."/>
+        <attribute name="created" value="RVFVSVBPO0RFU0tUT1AtVjBJM0hIUDsyMDI2LTA0LTI0OzA3OjUzOjQ1IHAuwqBtLjszMTM2"/>
+        <attribute name="edited" value="RVFVSVBPO0RFU0tUT1AtVjBJM0hIUDsyMDI2LTA0LTI0OzA4OjU2OjE4IHAuwqBtLjsxOzMyNDg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A, B, C, MAYOR, DATO" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite numero a colocar&quot;" newline="True"/>
+            <input variable="A"/>
+            <output expression="&quot;Digite numero a colocar&quot;" newline="True"/>
+            <input variable="B"/>
+            <output expression="&quot;Digite numero a colocar&quot;" newline="True"/>
+            <input variable="C"/>
+            <if expression="A&gt;B">
+                <then>
+                    <assign variable="MAYOR" expression="A"/>
+                </then>
+                <else>
+                    <assign variable="MAYOR" expression="B"/>
+                </else>
+            </if>
+            <if expression="MAYOR&gt;C">
+                <then/>
+                <else>
+                    <assign variable="MAYOR" expression="C"/>
+                </else>
+            </if>
+            <output expression="&quot;EL NUMERO MAYOR ES =&quot; &amp; MAYOR" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

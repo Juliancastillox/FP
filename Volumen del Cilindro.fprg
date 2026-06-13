@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Volumen del Cilindro"/>
+        <attribute name="authors" value="EQUIPO"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-04-19 10:49:10 a.&#160;m."/>
+        <attribute name="created" value="RVFVSVBPO0RFU0tUT1AtVjBJM0hIUDsyMDI2LTA0LTE5OzEwOjMwOjI3IGEuwqBtLjszMTE0"/>
+        <attribute name="edited" value="RVFVSVBPO0RFU0tUT1AtVjBJM0hIUDsyMDI2LTA0LTE5OzEwOjQ5OjEwIGEuwqBtLjsxOzMyMjQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Area, Radio, Altura, Volumen" type="Real" array="False" size=""/>
+            <output expression="&quot;Digite el radio del Cilindro a Calcular&quot;" newline="True"/>
+            <input variable="Radio"/>
+            <output expression="&quot;Digite la Altura del Cilindro a Calcular&quot;" newline="True"/>
+            <input variable="Altura"/>
+            <assign variable="Area" expression="3.1416 * Radio * Radio"/>
+            <assign variable="Volumen" expression="Area * Altura"/>
+            <output expression="&quot;El area del Cilindro es =&quot; &amp; Area" newline="True"/>
+            <output expression="&quot;El Volumen del Cilindro es =&quot; &amp; Volumen" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
